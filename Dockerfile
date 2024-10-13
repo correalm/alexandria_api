@@ -1,7 +1,8 @@
 # syntax=docker/dockerfile:1
 FROM ruby:2.5
 
-RUN apt-get update -qq
+RUN apt-get update && apt-get install -y build-essential
+
 WORKDIR /app
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
