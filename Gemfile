@@ -22,6 +22,7 @@ end
 
 group :test do
   gem 'database_cleaner'
+  gem 'faker'
   gem 'shoulda-matchers'
   gem 'webmock'
 end
